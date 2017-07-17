@@ -111,7 +111,8 @@ from pystdf import TableTemplate
 
 import pdb
 
-class Far(RecordType, metaclass=StdfRecordMeta):
+class Far(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **File Attributes Record (FAR)**
 
@@ -165,7 +166,8 @@ class Far(RecordType, metaclass=StdfRecordMeta):
     ('STDF_VER', 'U1')
   )
 
-class Atr(RecordType, metaclass=StdfRecordMeta):
+class Atr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Audit Trail Record (ATR)**
 
@@ -208,7 +210,8 @@ class Atr(RecordType, metaclass=StdfRecordMeta):
     ('CMD_LINE', 'Cn')
   )
 
-class Mir(RecordType, metaclass=StdfRecordMeta):
+class Mir(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Master Information Record (MIR)**
 
@@ -319,7 +322,8 @@ class Mir(RecordType, metaclass=StdfRecordMeta):
     ('SUPR_NAM', 'Cn')
   )
 
-class Mrr(RecordType, metaclass=StdfRecordMeta):
+class Mrr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Master Results Record (MRR)**
 
@@ -377,7 +381,8 @@ class Mrr(RecordType, metaclass=StdfRecordMeta):
     ('EXC_DESC', 'Cn')
   )
 
-class Pcr(RecordType, metaclass=StdfRecordMeta):
+class Pcr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Part Count Record (PCR)**
 
@@ -441,7 +446,8 @@ class Pcr(RecordType, metaclass=StdfRecordMeta):
     ('FUNC_CNT','U4')
   )
 
-class Hbr(RecordType, metaclass=StdfRecordMeta):
+class Hbr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Hardware Bin Record (HBR)**
 
@@ -511,7 +517,8 @@ class Hbr(RecordType, metaclass=StdfRecordMeta):
     ('HBIN_NAM','Cn')
   )
 
-class Sbr(RecordType, metaclass=StdfRecordMeta):
+class Sbr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Software Bin Record (SBR)**
 
@@ -578,7 +585,8 @@ class Sbr(RecordType, metaclass=StdfRecordMeta):
     ('SBIN_NAM','Cn')
   )
 
-class Pmr(RecordType, metaclass=StdfRecordMeta):
+class Pmr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Pin Map Record (PMR)**
 
@@ -647,7 +655,8 @@ class Pmr(RecordType, metaclass=StdfRecordMeta):
     ('SITE_NUM','U1')
   )
 
-class Pgr(RecordType, metaclass=StdfRecordMeta):
+class Pgr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Pin Group Record (PGR)**
 
@@ -696,7 +705,8 @@ class Pgr(RecordType, metaclass=StdfRecordMeta):
     ('PMR_INDX','k2U2')
   )
 
-class Plr(RecordType, metaclass=StdfRecordMeta):
+class Plr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Pin List Record (PLR)**
 
@@ -805,7 +815,8 @@ class Plr(RecordType, metaclass=StdfRecordMeta):
     ('RTN_CHAL','k0Cn')
   )
 
-class Rdr(RecordType, metaclass=StdfRecordMeta):
+class Rdr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Retest Data Record (RDR)**
 
@@ -851,7 +862,8 @@ class Rdr(RecordType, metaclass=StdfRecordMeta):
     ('RTST_BIN','k0U2')
   )
 
-class Sdr(RecordType, metaclass=StdfRecordMeta):
+class Sdr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Site Description Record (SDR)**
 
@@ -941,7 +953,8 @@ class Sdr(RecordType, metaclass=StdfRecordMeta):
     ('EXTR_ID','Cn')
   )
 
-class Wir(RecordType, metaclass=StdfRecordMeta):
+class Wir(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Wafer Information Record (WIR)**
 
@@ -997,7 +1010,8 @@ class Wir(RecordType, metaclass=StdfRecordMeta):
     ('WAFER_ID','Cn')
   )
 
-class Wrr(RecordType, metaclass=StdfRecordMeta):
+class Wrr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Wafer Results Record (WRR)**
 
@@ -1082,7 +1096,8 @@ class Wrr(RecordType, metaclass=StdfRecordMeta):
     ('EXC_DESC','Cn')
   )
 
-class Wcr(RecordType, metaclass=StdfRecordMeta):
+class Wcr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Wafer Configuration Record (WCR)**
 
@@ -1142,7 +1157,8 @@ class Wcr(RecordType, metaclass=StdfRecordMeta):
     ('POS_Y','C1')
   )
 
-class Pir(RecordType, metaclass=StdfRecordMeta):
+class Pir(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Part Information Record (PIR)**
 
@@ -1189,7 +1205,8 @@ class Pir(RecordType, metaclass=StdfRecordMeta):
     ('SITE_NUM','U1')
   )
 
-class Prr(RecordType, metaclass=StdfRecordMeta):
+class Prr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Part Results Record (PRR)**
 
@@ -1321,7 +1338,8 @@ class Prr(RecordType, metaclass=StdfRecordMeta):
     ('PART_FIX','Bn')
   )
 
-class Tsr(RecordType, metaclass=StdfRecordMeta):
+class Tsr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Test Synopsis Record (TSR)**
 
@@ -1424,7 +1442,8 @@ class Tsr(RecordType, metaclass=StdfRecordMeta):
     ('TST_SQRS','R4')
   )
 
-class Ptr(RecordType, metaclass=StdfRecordMeta):
+class Ptr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Parametric Test Record (PTR)**
 
@@ -1677,7 +1696,8 @@ class Ptr(RecordType, metaclass=StdfRecordMeta):
     ('HI_SPEC','R4')
   )
 
-class Mpr(RecordType, metaclass=StdfRecordMeta):
+class Mpr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Multiple-Result Parametric Record (MPR)**
 
@@ -1947,7 +1967,8 @@ class Mpr(RecordType, metaclass=StdfRecordMeta):
     ('HI_SPEC','R4')
   )
 
-class Ftr(RecordType, metaclass=StdfRecordMeta):
+class Ftr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Functional Test Record (FTR)**
 
@@ -2228,7 +2249,8 @@ class Ftr(RecordType, metaclass=StdfRecordMeta):
     ('SPIN_MAP','Dn')
   )
 
-class Bps(RecordType, metaclass=StdfRecordMeta):
+class Bps(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Begin Program Section Record (BPS)**
 
@@ -2261,7 +2283,8 @@ class Bps(RecordType, metaclass=StdfRecordMeta):
     ('SEQ_NAME','Cn'),
   )
 
-class Eps(RecordType, metaclass=StdfRecordMeta):
+class Eps(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **End Program Section Record (EPS)**
 
@@ -2303,7 +2326,8 @@ class Eps(RecordType, metaclass=StdfRecordMeta):
   sub = 20
   fieldMap = ()
 
-class Gdr(RecordType, metaclass=StdfRecordMeta):
+class Gdr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Generic Data Record (GDR)**
 
@@ -2417,7 +2441,8 @@ class Gdr(RecordType, metaclass=StdfRecordMeta):
     ('GEN_DATA', 'Vn'),
   )
 
-class Dtr(RecordType, metaclass=StdfRecordMeta):
+class Dtr(RecordType):
+  __metaclass__ = StdfRecordMeta
   """
   **Datalog Text Record (DTR)**
 
